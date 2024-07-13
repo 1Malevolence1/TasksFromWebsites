@@ -1,4 +1,4 @@
-package LeetCode;
+package org.example.LeetCode;
 
 public class ThePowerOfFour342 {
     public static void main(String[] args) {

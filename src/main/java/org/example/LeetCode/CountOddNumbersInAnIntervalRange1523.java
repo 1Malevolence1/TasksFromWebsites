@@ -1,4 +1,4 @@
-package LeetCode;
+package org.example.LeetCode;
 
 public class CountOddNumbersInAnIntervalRange1523 {
 

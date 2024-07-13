@@ -1,4 +1,4 @@
-package LeetCode;
+package org.example.LeetCode;
 
 public class LargestNumberAtLeastTwiceOfOthers747 {
     public static void main(String[] args) {

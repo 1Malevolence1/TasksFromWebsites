@@ -3,9 +3,8 @@ package org.example.CodeWars;
 
 import java.io.*;
 import java.util.*;
-import java.util.stream.Collectors;
 
-public class Main {
+public class Pies {
     public static void main(String[] args) throws IOException {
 
         Map<String, Integer> recipe = new HashMap();
