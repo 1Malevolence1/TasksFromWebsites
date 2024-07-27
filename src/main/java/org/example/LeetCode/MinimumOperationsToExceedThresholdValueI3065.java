@@ -2,6 +2,7 @@ package org.example.LeetCode;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class MinimumOperationsToExceedThresholdValueI3065 {
     public static void main(String[] args) {
@@ -10,16 +11,20 @@ public class MinimumOperationsToExceedThresholdValueI3065 {
         System.out.println(minOperations(new int[]{1,1,2,4,9}, 9));
     }
 
-    public static int minOperations(int[] nums, int k) {
-             Arrays.sort(nums);
-             int countDelete = 0;
+    public static int minOperationsStreamIpi(int[] nums, int k) {
+             return (int) Arrays.stream(nums).filter(item -> item < k).count();
+    }
 
-            for (Integer item: nums
-                 ) {
-                if(item < k){
-                    countDelete++;
-                }
+    public static int minOperations(int[] nums, int k) {
+        Arrays.sort(nums);
+        int countDelete = 0;
+
+        for (Integer item : nums
+        ) {
+            if (item < k) {
+                countDelete++;
             }
-            return countDelete;
+        }
+        return countDelete;
     }
 }
