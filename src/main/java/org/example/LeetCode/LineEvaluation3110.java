@@ -1,6 +1,7 @@
 package org.example.LeetCode;
 
 import java.util.Map;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class LineEvaluation3110 {
@@ -9,14 +10,8 @@ public class LineEvaluation3110 {
         System.out.println(scoreOfString("zaz"));
     }
     public static int scoreOfString(String s) {
-        char[] letters = s.toCharArray();
-        int sum = 0;
-        for (int item = 0; item < letters.length - 1; item++) {
-            sum += Math.abs(letters[item] - letters[item + 1]);
-        }
-
-        return sum;
-
+        int[] codes = s.chars().toArray();
+        return IntStream.range(0, codes.length - 1).map(i -> Math.abs(codes[i] - codes[i + 1])).sum();
     }
 }
 
