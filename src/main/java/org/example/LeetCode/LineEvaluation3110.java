@@ -1,8 +1,6 @@
 package org.example.LeetCode;
 
-import java.util.Map;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 public class LineEvaluation3110 {
     public static void main(String[] args) {
