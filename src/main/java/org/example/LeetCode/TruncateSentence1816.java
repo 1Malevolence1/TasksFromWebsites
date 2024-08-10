@@ -7,6 +7,7 @@ public class TruncateSentence1816 {
         System.out.println(truncateSentence("Hello how are you Contestant",4));
         }
 
+    // решение превосходит по памяти,но уступает в скорости
     public static String truncateSentence(String s, int k) {
         String[] massive = s.split(" ");
         StringBuilder stringBuilder = new StringBuilder();
