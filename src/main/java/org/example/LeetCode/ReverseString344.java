@@ -15,7 +15,7 @@ public class ReverseString344 {
             s[len - 1] = item;
             len--;
         }
-        
+
         System.out.println(Arrays.toString(s));
     }
 }
