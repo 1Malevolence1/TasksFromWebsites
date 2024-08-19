@@ -22,5 +22,4 @@ public class RemoveElement27 {
         }
         return list.size();
     }
-
 }
