@@ -30,6 +30,7 @@ public class MinimumIndexSumOfTwoLists599 {
                 }
             }
         }
+        
         return result.toArray(new String[0]);
     }
 }
