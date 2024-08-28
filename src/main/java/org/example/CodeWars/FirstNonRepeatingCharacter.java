@@ -14,19 +14,8 @@ public class FirstNonRepeatingCharacter {
     }
 
     public static String firstNonRepeatingLetter(String s){
-        String toLowerLine = s.toLowerCase();
-        char[] charLetters = toLowerLine.toCharArray();
-        Set<Character> setLetters = new HashSet<>();
-
-        for (int i =0; i < charLetters.length; i++){
-            char letter= charLetters[i];
-            if(!setLetters.contains(letter)){
-                int index = toLowerLine.indexOf(letter,toLowerLine.indexOf(letter)+ 1);
-                if(index == -1) {
-                    return String.valueOf(s.charAt(i));
-                }
-                setLetters.add(letter);
-            }
+        for(String letter : s.split("")){
+            if(s.toUpperCase().indexOf(letter.toUpperCase()) == s.toUpperCase().lastIndexOf(letter.toUpperCase())) return String.valueOf(letter);
         }
         return "";
     }
