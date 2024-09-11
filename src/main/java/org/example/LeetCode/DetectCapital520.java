@@ -8,8 +8,9 @@ public class DetectCapital520 {
         System.out.println(detectCapitalUse("leetcode"));
     }
 
-    public  boolean detectCapitalUse(String word) {
+    public static   boolean detectCapitalUse(String word) {
         boolean firstLetterUpper = word.charAt(0) == Character.toUpperCase(word.charAt(0));
+
 
 
         if(firstLetterUpper){
@@ -21,16 +22,16 @@ public class DetectCapital520 {
 
 
 
-    public  boolean allLettersUpper(String word){
+    public static  boolean allLettersUpper(String word){
         return word.equals(word.toUpperCase());
     }
 
-    public  boolean onlyFirstLetterUpper(String word){
+    public  static boolean onlyFirstLetterUpper(String word){
         return word.length() > 1 &&
                 word.substring(1).equals(word.substring(1).toLowerCase());
     }
 
-    public  boolean allLettersLower(String word) {
+    public static boolean allLettersLower(String word) {
       return   word.equals(word.toLowerCase());
     }
 
