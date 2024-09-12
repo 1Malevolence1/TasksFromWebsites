@@ -22,7 +22,7 @@ public class IntersectionOfTwoArraysII350 {
                 frequencyMap.put(num, frequencyMap.get(num) - 1);
             }
         }
-        
+
         int[] resultArray = new int[result.size()];
         for (int i = 0; i < result.size(); i++) {
             resultArray[i] = result.get(i);
